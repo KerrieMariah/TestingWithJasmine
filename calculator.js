@@ -14,11 +14,11 @@ window.addEventListener('DOMContentLoaded', function () {
       amount: +(document.getElementById("loan-amount").value),
       years: +(document.getElementById("loan-years").value),
       rate: +(document.getElementById("loan-rate").value),
-    };
+    }
   }
   
   function setupInitialValues() {
-    let values = { amount: 0, years: 0, rate: 0 };
+    let values = { amount: 41445, years: 6, rate: 7.1 };
     document.getElementById("loan-amount").value = values.amount;
     document.getElementById("loan-years").value = values.years;
     document.getElementById("loan-rate").value = values.rate;
@@ -42,5 +42,5 @@ window.addEventListener('DOMContentLoaded', function () {
   
   function updateMonthly(monthly) {
     let monthlyPayment = document.getElementById("monthly-payment");
-    monthlyPayment.innerText = parseFloat(monthly);
+    monthlyPayment.innerText = monthly;
   }
